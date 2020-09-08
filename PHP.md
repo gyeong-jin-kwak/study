@@ -13,3 +13,9 @@
   - $abc -> isDir();
   - $abc -> fread($abc -> fileSize())
   - $abc -> fwirte(ran(1, 100))
+  
+- SplFileObject : class
+- $abc, $abc2 .. : instance
+- isFile(), isDir() .. : method (function)
+- data.txt, data2.txt .. : state
+  
