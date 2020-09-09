@@ -39,3 +39,14 @@ foreach($odata as $item){
 }
 var_dump($odata->count());
 ```
+## 클래스, 매소드, 인스턴스 만들기 
+```
+class MyFileObject {
+  function isFile(){
+    return is_file('data.txt');
+  }
+}
+
+$file = new MyFileObject();
+var_dump($file->isFile());
+```
