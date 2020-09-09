@@ -17,3 +17,13 @@
 - $ npx create-react-app begin-react (메뉴bar - 이동 - 컴퓨터 - MacintoshHD - 사용자 - 집아이콘 경로에 만들어진다.)
 - $ cd begin-react
 - $ yarn start
+
+## JSX 기본규칙 XML
+XML(html) 형식의 코드를 사용하면 babel이 JSX(javascript) 형식으로 언어를 바꿔준다. 
+- 태그는 꼭 닫혀있어야한다. (input이나 br태그 또한 꼭 닫아주어야한다.)
+- 두개 이상의 태그는 꼭 <div></div>와 같은 태그로 감싸주어야한다. <> </> 태그로 감싸면 자동으로 Fragment 태그로 감싸지게 되는데 div보다 그게 나은 선택일 수도 있다.
+- JSX 내에서 자바스크립트 면수는 {name}과 같이 {} 중괄호에 변수를 써준다. 
+- JSX 내에서 style은 camelCase를 사용한다.
+- JSX 내에서의 class는 'className'을 사용한다.
+- 주석처리는 {/* 형태로 사용한다. */}
+- 이미 { 중괄호로 열린 태그 안에서는 '//'형태의 주석처리도 가능하다 }
