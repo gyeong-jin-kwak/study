@@ -88,3 +88,23 @@ fuction wrapper({children}){
   )
 }
 ```
+## 조건부 렌더링
+```
+* app.js *
+<wrapper>
+  <Hello name="react" color="red" isSpecial={true} />
+  <Hello color="pink" />
+</wrapper>
+{/* 그냥 isSpecial만 사용해도 true를 반환한다. */}
+
+* Hello.js *
+function Hello({name, color, isSpecial}){
+  return (
+    <div style={color}>
+      {isSpecial ? <b>*</b> : null} {/* 혹은 */}
+      {isSpecial && <b>*</b>}
+      안녕하세요 {name}
+    </div>
+  )
+}
+```
