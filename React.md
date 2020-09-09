@@ -12,3 +12,8 @@
   - $ yarn --version
   - $ yarn global add create-react-app (바로 리액트 프로젝트를 만들 수 있도록 도와준다.)
 - Git bash
+
+## React app 만들어보기
+- $ npx create-react-app begin-react (메뉴bar - 이동 - 컴퓨터 - MacintoshHD - 사용자 - 집아이콘 경로에 만들어진다.)
+- $ cd begin-react
+- $ yarn start
