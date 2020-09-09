@@ -27,3 +27,64 @@ XML(html) 형식의 코드를 사용하면 babel이 JSX(javascript) 형식으로
 - JSX 내에서의 class는 'className'을 사용한다.
 - 주석처리는 {/* 형태로 사용한다. */}
 - 이미 { 중괄호로 열린 태그 안에서는 '//'형태의 주석처리도 가능하다 }
+
+## props
+```
+* Hello.js *
+function Hello(props){
+  return <div>안녕하세요 {props.name}</div>
+}
+
+* App.js *
+<Hello name="react" />
+```
+### props가 여러개일 경우
+```
+* Hello.js *
+function Hello(props){
+  return <div stlye={{props.color}}>안녕하세요 {props.name}</div>
+}
+
+function Hello({color, name}){
+  return <div stlye={color}>안녕하세요 {name}</div>
+}
+```
+### defaultProps 값 설정하기
+```
+* Hello.js *
+funtion Hello({color, name}){
+  return <div style={color}>안녕하세요, {props.name}</div>
+  
+  Hello.defaultProps = {
+    name='이름없음',
+  }
+}
+
+* App.js *
+<>
+  <Hello name="react" color="red" />
+  <Hello color="pink" />
+</>
+```
+
+### props.children - 감싸고 있는 태그가 있을 때 {children}을 사용해야 내부에 있는 태그들이 보인다.
+```
+* app.js *
+<wapper>
+  <Hello />
+</wapper>
+
+* wrapper.js *
+fuction wrapper({children}){
+  const style = {
+    padding: '20px',
+    border: '2px solid black',
+  }
+  
+  return (
+    <div style={style}>
+      {chidren}
+    </div>
+  )
+}
+```
