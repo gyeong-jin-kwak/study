@@ -17,8 +17,9 @@
 ```
 - SplFileObject : class
 - $abc, $abc2 .. : instance
-- isFile(), isDir() .. : method (function)
+- isFile(), isDir() .. : method (function), behavior
 - data.txt, data2.txt .. : state
+- filename .. : instance variable, Instance Field, Instance Property
 ```
 ## 함수 스타일과 객체 스타일 비교해서 사용해보기
 ### 함수 (Function)
@@ -49,4 +50,34 @@ class MyFileObject {
 
 $file = new MyFileObject();
 var_dump($file->isFile());
+```
+## 인스턴스 변수
+$this -> 변수 를 통해서 data.txt와 같은 state에 접근할 수 있다.
+```
+class MyFileObject {
+  function isFile(filename){
+    return is_file($this -> filename)
+  }
+}
+
+$file = new MyObjectFile();
+$file -> filename = 'data.txt';
+var_dump($file->isFile());
+var_dump($file->filename); 
+스테이트를 알 수 있다.
+```
+## Constructor
+```
+class MyObjectFile{
+  function __construct($fname){
+    $this->$filename = $fname;
+  }
+  function isFile(){
+    return is_file($this->filename)
+  }
+}
+
+$file = new MyObjectFile('data.txt');
+var_dump($file->isFile());
+var_duam($file->filename);
 ```
