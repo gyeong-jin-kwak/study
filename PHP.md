@@ -20,3 +20,22 @@
 - isFile(), isDir() .. : method (function)
 - data.txt, data2.txt .. : state
 ```
+## 함수 스타일과 객체 스타일 비교해서 사용해보기
+### 함수 (Function)
+```
+$adata = array('a', 'b', 'c');
+array_push($adata, 'd');
+foreach($adata as $item){
+  echo $item. <br>
+}
+var_dump(count($adata));
+```
+### 객체 (Object)
+```
+$odata = new ArrayObject(array('a', 'b', 'c'));
+$odata-> append('d');
+foreach($odata as $item){
+  echo $item. <br>
+}
+var_dump($odata->count());
+```
