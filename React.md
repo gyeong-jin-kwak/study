@@ -131,7 +131,7 @@ function Counter(){
     <button onClick={decreaseNum}>-1</button>
   )
 }
+```
 - import React, { useState } from 'react';
 - setter함수란? 변수에 값을 집어넣는 함수 (반대개념. getter 함수)
 - prevNum의 존재는 useState에서 파라미터 설정시 '이전 숫자'로 애초에 설계해둔것이다.
-```
