@@ -108,3 +108,30 @@ function Hello({name, color, isSpecial}){
   )
 }
 ```
+## useState (component 상태관리_hooks중 하나)
+```
+* Counter.js *
+import React, { useState } from 'react';
+
+function Counter(){
+  const [number, setNumber] = useState(0);
+  {/* [현재상태, setter함수] */}
+  const increasNum = () => {
+    setNumber(
+      prevNum => prevNum + 1
+    )
+  }
+  const decreaseNum = () => {
+    prevNum => prevNum + 1
+  }
+
+  return(
+    <h1>{number}</h1>
+    <button onClick={increaseNum}>+1</button>
+    <button onClick={decreaseNum}>-1</button>
+  )
+}
+- import React, { useState } from 'react';
+- setter함수란? 변수에 값을 집어넣는 함수 (반대개념. getter 함수)
+- prevNum의 존재는 useState에서 파라미터 설정시 '이전 숫자'로 애초에 설계해둔것이다.
+```
