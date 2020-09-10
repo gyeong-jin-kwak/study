@@ -135,3 +135,43 @@ function Counter(){
 - import React, { useState } from 'react';
 - setter함수란? 변수에 값을 집어넣는 함수 (반대개념. getter 함수)
 - prevNum의 존재는 useState에서 파라미터 설정시 '이전 숫자'로 애초에 설계해둔것이다.
+## input이 여러개일 경우
+```
+import React { useState } from 'react';
+
+function InputSample(){
+  const [inputs, setInput] = useState({
+    name: '',
+    nickname: ''
+  })
+  
+  const {name, nickname} = inputs; //비구조화를 통한 값추출
+  
+  const onChange = (e) => {
+    const {name, value} = e.target;
+    setInput(
+      ...inputs, //기존의 input개체를 복사한다.
+      [name]: value, //name키를 갖은 값을 value로 설정
+    )
+  }
+  
+  const onReset = (e) => {
+    setInput({
+      name: '',
+      nickname: ''
+    })
+  }
+
+  return(
+    <div>
+      <input name="name" placeholder="이름" onChang={onChange} value={name} />
+      <input name="nickname" placeholder="닉네임" onChange={onChange} value={nickname} />
+      <button onClick={onReset}>초기화</button>
+      <div>
+        <b>이름(닉네임)</b>
+        {name}({nickname})
+      </div>
+    </div>
+  )
+}
+```
