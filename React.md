@@ -181,3 +181,7 @@ function InputSample(){
 기존 리액트 방식은 함수형 컴포넌트를 쓰되 state나 lifecycle methode를 사용할 때 class형 컴포넌트를 사용했지만 코드 규모가 뚱뚱해진다.
 hook을 사용하면 함수형 컴포넌트에서고 클래스형 컴포넌트처럼 state나 lifecycle methode를 사용할 수 있다.
 ex. useState
+
+## ComponentDidMount
+
+컴포넌트의 첫번째 렌더링이 마치고 나면 호출되는 메서드. 이 메서드가 호출되는 시점에는 컴포넌트가 화면에 나타난 상태. 외부 라이브러리 연동을 하거나, 해당 컴포넌트에서 필요로하는 데이터를 요청하기 위해 axios, fetch 등을 통하여 ajax 요청을 하거나, DOM 의 속성을 읽거나 직접 변경하는 작업을 진행.
