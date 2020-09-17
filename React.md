@@ -175,3 +175,8 @@ function InputSample(){
   )
 }
 ```
+## 리액트 훅이란 ? 
+[참고자료] (https://codingbroker.tistory.com/23)
+기존 리액트 방식은 함수형 컴포넌트를 쓰되 state나 lifecycle methode를 사용할 때 class형 컴포넌트를 사용했지만 코드 규모가 뚱뚱해진다.
+hook을 사용하면 함수형 컴포넌트에서고 클래스형 컴포넌트처럼 state나 lifecycle methode를 사용할 수 있다.
+ex. useState
