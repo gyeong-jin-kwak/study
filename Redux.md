@@ -48,3 +48,19 @@ store.subscribe(red)
 
 리덕스 자료
 ![은지언니 리덕스](./images/redux.png)
+
+## 6 강의
+```
+console.log(action.type, action, state, newState)
+```
+state는 이전 상태를 나타내고 newState는 변경된 후의 state를 나타낸다.
+
+## 7-3 강의
+* 리듀서는 이전의 state 값과 action 값을 인자로 받으며 새로운 state 값을 return으로 받는다.
+* 최초 1회는 무조건 실행된다. init으로 받아오는 것이 아니면 undefined가 된다.
+
+## 7-4 강의
+```
+newState = Object.assign({}, state, {selected_id: action.id}) 
+```ㅇ
+newState에 복제된 값이 들어오는데 selected_id에 덮어쓰기한 값이 들어오게 된다. 
