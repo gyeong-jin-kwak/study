@@ -1,6 +1,6 @@
 # React Router
 React SPA(Single Page Application) 구현에 가장 많이 사용 되는 'react-router-dom' 
-기존 방식의 <a href=""></a>를 사용해서 url 변경 시 새로고침 되며 모든 페이지를 reload 하여 로드 시간이 걸리게 된다. 
+기존 방식의 ```<a href=""></a>```를 사용해서 url 변경 시 새로고침 되며 모든 페이지를 reload 하여 로드 시간이 걸리게 된다. 
 React는 SPA 체제로 새로고침 대신 Router를 사용하여 변경된 소스만 바뀌도록 해주기 때문에 속도가 빠르다. 
 
 ## react-router, react-router-dom, react-router-native 의 차이
@@ -15,7 +15,7 @@ React는 SPA 체제로 새로고침 대신 Router를 사용하여 변경된 소�
 * 동적인 페이지에 적합하다. (서버에 있는 데이터들을 스크립트에 의해 가공 처리 한 후 생성되어 전달되는 웹페이지)
 * 새로 고침 하면 경로를 찾지 못해서 에러가 난다. (주소를 사용하여 페이지를 찾아갈 때에도 에러 발생)
     * 이를 해결하기 위해서는 서버에 추가적인 세팅이 필요하다. 페이지의 유무를 서버에 알려줘야 하며 서버 세팅시 검색엔진에 신경써야한다.
-* github pages에서 설정하기 복잡하다. (배포가 복잡)
+* github pages에서 설정하기 복잡하다. (배포가 복)
 
 ### HashRouter
 * URL의 hash를 활용한 라우터이다. 
