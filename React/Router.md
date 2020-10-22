@@ -32,3 +32,16 @@ React는 SPA 체제로 새로고침 대신 Router를 사용하여 변경된 소�
 상품을 등록하거나 제거할 떄 회원관리 할 때 등 그때마다 정적 웹 페이지를 제작해줘야 하지만 동적 페이지로 운영시 스크립트를 
 작성하고 자동으로 페이지가 생성되게 해주면 된다. 
 ```
+
+## URI에 관련하여
+[url 공식문서](https://developer.mozilla.org/ko/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web)
+* 리소스를 요청하는것 
+* URI (Uniform Recource Idntifier)에 의해 식별됨
+* URL은 URI의 한 종류 / URL ⊂ URI
+* 프로토콜: http:// 보안 되기 전 단계, https:// 보안이 된 후
+* 도메인: www.example.com
+* 포트: 리소스 접근에 사용되는 기술적 문 
+    * http는 80, https는 443을 사용하는데 다른 포트 사용시 꼭 입력! 
+* 경로: 오늘날 대부분 물리적 실제 위치를 사용하지 않고 웹 서버에 의해 다뤄지는 추상화를 사용함
+* 쿼리: 추가적 파라메터, &로 구분
+* 프래그먼트: 북마크의 한 종류, 북마크된 지점에 위치한 컨텐츠를 보여주기 위한 방법, # 뒤의 부분은 서버에 전달되지 않는다.
