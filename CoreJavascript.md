@@ -6,17 +6,17 @@
 
 ## Data Types
 ### Primitive Type (기본형)
-  1. Number
-  2. String
-  3. Boolean
-  4. null
-  5. undefined
-  ![기본형 데이터 저장 방법](./images/javascript_primitive.jpg)
+1. Number
+2. String
+3. Boolean
+4. null
+5. undefined
+![기본형 데이터 저장 방법](./images/javascript_primitive.jpg)
 ### Reference Type (참조형)
-  1. Object
-    * Array
-    * Function
-    * RegExp
+1. Object
+  * Array
+  * Function
+  * RegExp
   ![참조형 데이터 저장 방법](./images/javascript_reference.jpg)
   * 한번 더 거쳐가는 형태
 
