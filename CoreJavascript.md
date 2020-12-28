@@ -14,9 +14,9 @@
   ![기본형 데이터 저장 방법](./images/javascript_primitive.jpg)
 ### Reference Type (참조형)
   1. Object
-    1-1. Array
-    1-2. Function
-    1-3. RegExp
+    * Array
+    * Function
+    * RegExp
   ![참조형 데이터 저장 방법](./images/javascript_reference.jpg)
   * 한번 더 거쳐가는 형태
 
