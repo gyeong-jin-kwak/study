@@ -13,7 +13,7 @@
   5. undefined
   ![기본형 데이터 저장 방법](./images/javascript_primitive.jpg)
 ### Reference Type (참조형)
-  * Object
+  1. Object
     1. Array
     2. Function
     3. RegExp
