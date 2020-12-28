@@ -5,14 +5,14 @@
 ```
 
 ## Data Types
-1. Primitive Type (기본형)
+### Primitive Type (기본형)
   1. Number
   2. String
   3. Boolean
   4. null
   5. undefined
   * ![기본형 데이터 저장 방법](./images/javascript_primitive.jpg)
-2. Reference Type (참조형)
+### Reference Type (참조형)
   * Object
     1. Array
     2. Function
