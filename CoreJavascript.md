@@ -14,10 +14,10 @@
 ![기본형 데이터 저장 방법](./images/javascript_primitive.jpg)
 ### Reference Type (참조형)
 1. Object
-  * Array
-  * Function
-  * RegExp
-  ![참조형 데이터 저장 방법](./images/javascript_reference.jpg)
-  * 한번 더 거쳐가는 형태
+    * Array
+    * Function
+    * RegExp
+    ![참조형 데이터 저장 방법](./images/javascript_reference.jpg)
+    * 한번 더 거쳐가는 형태
 
 * 구분을 하는 이유 ?
