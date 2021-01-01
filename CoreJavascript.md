@@ -4,8 +4,9 @@
 1. Data Types (데이터 타입)
 2. Execution Context (실행 콘텍스트)
 3. This
-4. callback 
+4. callback
 5. Closure
+6. Prototype
 ```
 
 ## Data Types
@@ -140,3 +141,38 @@ document.getElementId('a').addEventListener('click', cbFunc);
     * 지역변수를 직접 변경하지 않고 보호하며 접근
     * 함수에 의지를 부여할 수 있음
 ![closure](./images/closure2.jpg)
+
+## Prototype
+1. `Prototype`, `Constructor`, `__proto__`
+2. 메소드 상속 및 동작원리
+3. Prototype Chaining
+
+### Prototype, Constructor __proto__
+![prototype](./images/prototype1.jpg)
+
+### Prototype 메소드 상속 및 동작원리
+![prototype2](./images/prototype2.jpg)
+
+### Prototype Chaining
+![prototype3](./images/prototype3.jpg)
+```
+var arr = [1, 2, 3];
+console.log(arr.toString()); // 1, 2, 3
+배열에는 toString() prototype은 없지만 Array의 __proto__ 그리고 Object의 __proto__에 toString이 존재하기 때문에 사용할 수 있음
+
+var arr = [1, 2, 3];
+arr.toString = function() {
+    return this.join('_');
+}
+console.log(arr.toString()); // 1_2_3
+console.log(arr.__proto__.toSting.call(arr)); // 1, 2, 3
+console.log(arr.__proto__.__proto__.toString.call(arr)); // [object Array]
+
+var arr = [1, 2, 3];
+Array.prototype.toString = function(){
+    return '[' + this.join(', ') + ']';
+};
+console.log(arr.toString()); //[1, 2, 3]
+console.log(arr.__proto__.toString.call(arr)); //[1, 2, 3]
+console.log(arr.__proto__.__proto__.toString.call(arr)); // [object Array]
+```
