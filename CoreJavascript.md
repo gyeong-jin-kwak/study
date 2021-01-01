@@ -184,7 +184,7 @@ console.log(arr.__proto__.__proto__.toString.call(arr)); // [object Array]
 
 ### class
 * prototype 으로 전달
-![class](./images/class_1.jpg)
+* ![class](./images/class_1.jpg)
 
 ### class inheritance
 ![class 상위 하위 구성](./images/class_2.jpg)
