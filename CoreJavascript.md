@@ -187,9 +187,6 @@ console.log(arr.__proto__.__proto__.toString.call(arr)); // [object Array]
 * ![class](./images/class_1.jpg)
 
 ### class inheritance
-![class 상위 하위 구성](./images/class_2.jpg)
-<hr>
-
 * `Employee.prototype.constructor = Employee;` , `Employee.prototype = new Person();`
 * ![class 상위 하위 구성](./images/class_2.jpg)
 <hr>
