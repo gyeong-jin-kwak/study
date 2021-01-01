@@ -58,14 +58,14 @@
 ## This
 ### this의 주체
 * this 는 함수가 호출될 때 활성화 됨
-![this의 주체](./images/this_3.jpg)
+![this의 주체](./images/this_3.png)
 
 #### 메소드 호출시
-![메소드 호출시 this의 주체](./images/this_1.jpg)
+![메소드 호출시 this의 주체](./images/this_1.png)
 
 * 내부 함수에서의 오류
 아래와 같은 결과 도출 때문에 변수에 넣어서 사용해야 한다.
-![내부 함수에서의 오류](./images/this_2.jpg)
+![내부 함수에서의 오류](./images/this_2.png)
 함수는 window/global을 호출하기 때문에 c() 호출시 b에 선언된 변수 a가 없으므로 global을 가리킴
 
 #### callback 호출 시
