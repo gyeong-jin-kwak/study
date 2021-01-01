@@ -7,6 +7,7 @@
 4. callback
 5. Closure
 6. Prototype
+7. Class
 ```
 
 ## Data Types
@@ -149,6 +150,7 @@ document.getElementId('a').addEventListener('click', cbFunc);
 
 ### Prototype, Constructor __proto__
 ![prototype](./images/prototype1.jpg)
+* instance: 어떤 class의 속성을 가지고 있는 구체적인 객체
 
 ### Prototype 메소드 상속 및 동작원리
 ![prototype2](./images/prototype2.jpg)
@@ -176,3 +178,32 @@ console.log(arr.toString()); //[1, 2, 3]
 console.log(arr.__proto__.toString.call(arr)); //[1, 2, 3]
 console.log(arr.__proto__.__proto__.toString.call(arr)); // [object Array]
 ```
+## Class
+1. class
+2. class inheritance
+
+### class
+* prototype 으로 전달
+![class](./images/class_1.jpg)
+
+### class inheritance
+![class 상위 하위 구성](./images/class_2.jpg)
+
+* `Employee.prototype.constructor = Employee;` , `Employee.prototype = new Person();`
+![class 상위 하위 구성](./images/class_2.jpg)
+
+* 연결은 잘되지만 필요없는 property가 들어가게 됨
+![class 불필요한 속성 포함](./images/class_3.jpg)
+
+* Bridge 와 extendClass 보완
+    * extendClass 
+        * 즉시 실행 함수
+        * 함수 선언 
+        * 함수 반환 ( 클로져 )
+![extendClass 고안](./images/class_4.jpg)
+
+* 실제 코드
+![extendClass 실제코드](./images/class_5.jpg)
+
+
+
