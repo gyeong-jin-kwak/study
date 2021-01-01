@@ -68,7 +68,7 @@
 * 내부 함수에서의 오류
 아래와 같은 결과 도출 때문에 변수에 넣어서 사용해야 한다.
 ![내부 함수에서의 오류](./images/this_2.png)
-함수는 window/global을 호출하기 때문에 c() 호출시 b에 선언된 변수 a가 없으므로 global을 가리킴
+* 함수는 window/global을 호출하기 때문에 c() 호출시 b에 선언된 변수 a가 없으므로 global을 가리킴
 
 #### callback 호출 시
 1. 기본적으로는 함수의 this와 같음
@@ -188,22 +188,26 @@ console.log(arr.__proto__.__proto__.toString.call(arr)); // [object Array]
 
 ### class inheritance
 ![class 상위 하위 구성](./images/class_2.jpg)
+<hr>
 
 * `Employee.prototype.constructor = Employee;` , `Employee.prototype = new Person();`
-![class 상위 하위 구성](./images/class_2.jpg)
+* ![class 상위 하위 구성](./images/class_2.jpg)
+<hr>
 
 * 연결은 잘되지만 필요없는 property가 들어가게 됨
-![class 불필요한 속성 포함](./images/class_3.jpg)
+* ![class 불필요한 속성 포함](./images/class_3.jpg)
+<hr>
 
 * Bridge 와 extendClass 보완
     * extendClass 
         * 즉시 실행 함수
         * 함수 선언 
         * 함수 반환 ( 클로져 )
-![extendClass 고안](./images/class_4.jpg)
+* ![extendClass 고안](./images/class_4.jpg)
+<hr>
 
 * 실제 코드
-![extendClass 실제코드](./images/class_5.jpg)
+* ![extendClass 실제코드](./images/class_5.jpg)
 
 
 
